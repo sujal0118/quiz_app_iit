@@ -1,0 +1,30 @@
+What is capital of India?, Pune, Mumbai, Delhi, Chennai, C, Easy
+When do we celebrate Earth day?, 22 April,22 Jan ,31 May,27 Jan, A, Easy
+In Which year does India won its 1st Cricket World Cup?, 1983,1973,1993,2011,A,Easy
+In Which year Mahatma Gandhi was Killed ?, 1947,1954,1949,1948,D,Easy
+What is India's economic capital?, Pune, Mumbai, Delhi, Chennai, B, Easy
+In Which year Pakistan Occupied Part Of Kashmir Known as POK ?, 1947,1954,1949,1948,A, Easy
+Who wrote the national anthem of India?, Rabindranath Tagore, Subhas Chandra Bose, Sarojini Naidu ,Mahatma Gandhi, A, Easy
+Which animal is known as the 'King of the Jungle'?, Tiger, Lion, Elephant, Leopard, B, Easy
+Which is the longest river in the world?, Amazon, Nile, Ganges, Mississippi, B, Easy
+How many colors are in a rainbow?,5,6,7,8,C,Easy
+Which Mughal emperor built the Taj Mahal? ,Akbar ,Jahangir ,Shah Jahan, Aurangzeb, C, Medium
+Who discovered electricity?, Albert Einstein, Isaac Newton, Benjamin Franklin, Thomas Edison, C, Medium
+What is the smallest country in the world?, Vatican City, Monaco, Liechtenstein, Malta, A, Medium
+Which metal is used in making thermometers?,Iron, Aluminum, Mercury, Copper, C, Medium
+Who was the first President of India?,Rajendra Prasad, Jawaharlal Nehru, Indira Gandhi, Sardar Patel ,A, Medium
+Which is the highest civilian award in India?, Bharat Ratna, Padma Shri, Padma Bhushan, Param Vir Chakra, A, Medium
+Who invented the telephone? ,Alexander Graham Bell ,Nikola Tesla,Thomas Edison ,Henry Ford ,A ,Medium
+Which Indian city is known as the 'Silicon Valley of India'? ,Delhi ,Bangalore ,Mumbai ,Kolkata ,B ,Medium
+What does the term 'GDP' stand for?,Gross Domestic Product ,General Development Program ,Global Data Policy ,Government Development Plan,A,Medium
+Who is the father of the Indian Constitution?,B.R. Ambedkar,Mahatma Gandhi,Sardar Patel,Rajendra Prasad,A,Medium
+Which country has won the most FIFA World Cups?,Germany,Argentina,Brazil,Italy,C,Hard
+What is the full form of NASA?,National Aeronautics and Space Administration,North American Space Agency,New Advanced Scientific Association,National Aerospace and Space Administration,A,Hard
+What is the SI unit of electric current?,Ohm,Volt,Ampere,Watt,C,Hard
+Who discovered the law of gravitation?,Isaac Newton,Galileo Galilei,Albert Einstein,Nikola Tesla,A,Hard
+Which Indian scientist was awarded the Nobel Prize for Physics in 1930?,C.V. Raman,Homi Bhabha,A.P.J. Abdul Kalam,Subrahmanyan Chandrasekhar,A,Hard
+Which is the deepest ocean in the world?,Atlantic Ocean,Pacific Ocean,Indian Ocean,Arctic Ocean,B,Hard
+Which battle marked the beginning of British rule in India?,Battle of Panipat,Battle of Plassey,Battle of Buxar,First Anglo-Mysore War,B,Hard
+What is the speed of light in a vacuum?,300,000 km/s,150,000 km/s,400,000 km/s,500,000 km/s,A,Hard
+What is the currency of Switzerland?,Euro,Pound Sterling,Dollar,Swiss Franc,D,Hard
+Who was the first man to travel into space?,Neil Armstrong,Yuri Gagarin,Michael Collins,Buzz Aldrin,B,Hard

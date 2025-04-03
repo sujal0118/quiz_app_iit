@@ -1,0 +1,30 @@
+What does HTML stand for?,HyperText Markup Language,Hyper Transfer Markup Language,HighText Machine Language,Hyperlink and Text Markup Language,A,Easy
+Which symbol is used to comment a single line in Python?,//,/*,#,<!--,C,Easy
+What is the output of `print(2 + 3 * 4)` in Python?,20,14,24,18,B,Easy
+Which of the following is a valid variable name in Java?,1variable,_variable,variable-name,public,C,Easy
+Which of the following is NOT a data type in Python?,int,float,string,character,D,Easy
+Which keyword is used to define a function in Python?,define,func,def,function,C,Easy
+What is the extension of a Java file?,.java,.js,.py,.class,A,Easy
+Which of the following loops is entry-controlled?,while loop,do-while loop,both,None,A,Easy
+Which operator is used for exponentiation in Python?,^,**,%,*,B,Easy
+Which of the following is not a relational operator in Java?,>,<,==,=,D,Easy
+What is the time complexity of binary search?,O(n),O(log n),O(n^2),O(1),B,Medium
+Which data structure follows the LIFO principle?,Queue,Stack,Array,Linked List,B,Medium
+Which sorting algorithm has the best average-case time complexity?,Bubble Sort,Insertion Sort,Merge Sort,Selection Sort,C,Medium
+What does SQL stand for?,Structured Question Language,Structured Query Language,System Query Language,Sequential Query Language,B,Medium
+Which of the following is NOT a Java access modifier?,public,private,protected,global,D,Medium
+How do you create a dictionary in Python?,{},[],(),"",A,Medium
+What is the default return type of a function in Java if none is specified?,void,int,double,String,A,Medium
+Which function is used to read user input in Python?,input(),read(),scan(),getchar(),A,Medium
+How do you define a constant variable in Java?,final,const,constant,var,A,Medium
+Which programming language is used for Android development?,Swift,Kotlin,C#,Ruby,B,Medium
+What is the worst-case time complexity of QuickSort?,O(n log n),O(n^2),O(n),O(log n),B,Hard
+Which data structure is used for implementing recursion?,Queue,Stack,Heap,Graph,B,Hard
+Which of the following is NOT a valid SQL JOIN type?,INNER JOIN,OUTER JOIN,LEFT JOIN,CROSS JOIN,B,Hard
+What is the output of `2 << 3` in Python?,8,16,10,6,B,Hard
+Which Java keyword is used to prevent method overriding?,static,final,super,private,B,Hard
+Which of the following is not a feature of OOP?,Encapsulation,Polymorphism,Recursion,Inheritance,C,Hard
+Which data structure is best for finding the shortest path in a graph?,Heap,Stack,Queue,Priority Queue,D,Hard
+Which algorithm is used in finding the minimum spanning tree?,Dijkstra's Algorithm,Bellman-Ford Algorithm,Prim’s Algorithm,Floyd-Warshall Algorithm,C,Hard
+What is the function of the `super` keyword in Java?,Calls parent class constructor,Deletes parent class,Creates an interface,Returns child class instance,A,Hard
+What is the default port number for MySQL?,3306,5432,8080,1521,A,Hard
