@@ -1,32 +1,20 @@
-# version 2
+# version 3
+'''
+implemented the difficalty feature 
+'''
 import random
+from utils.file_oprations import load_questions
 
 
-#To Load Questions 
-def load_questions(filename):       #geting file name from users choice
-   questions=[]
-   with open(filename,"r") as file:     #Reading Qusetions From file
-       for line in file:
-           parts=line.strip().split(",")
-           #To ensure all Qusstions is in correct fromat
-           if len(parts)==7:             
-              #Unpacks the 7 elements into individual variables.
-              question, op1,op2,op3,op4,correct,difficulty =parts 
-             #Storing  Qusetions in Dictionary
-              questions.append({
-                 "question":question,
-                 "options": [op1,op2,op3,op4],
-                 "correct":correct.strip(),
-                 "difficulty":difficulty.strip()
-                 })
-              #returning  Qusetions in Dictionary
-       return questions   
 # To ask random Questions
-def ask(questions):
+def ask(questions,level):
     score=0
-    random.shuffle(questions) #random Questions
-    for i,q in enumerate(questions,start=1):
-         print(f"\n Question{i}: {q['difficulty']}: {q['question']}")
+    diff=[q for q in questions if q['difficulty']==level]
+    if not diff:
+        print(f"No Questions of {level} level")
+    random.shuffle(diff) #random Questions
+    for i,q in enumerate(diff,start=1):
+         print(f"\n Questions {i}: {q['difficulty']}: {q['question']}")
          print(f"A.{q['options'][0]}")
          print(f"B.{q['options'][1]}")
          print(f"C.{q['options'][2]}")
@@ -38,12 +26,24 @@ def ask(questions):
              score+=1
          else:
             print(f"Wrong!! Correct answer:{q['correct']}\n")
-    print(f"Quiz Complete!\n Your Socre: {score}/{len(questions)}")
+    print(f"Quiz Complete!\n Your Score: {score}/{len(diff)}")
     
-    
-    
+#To set difficulty level
+def choice_difficulty():
+    level=int(input("\n 1. Easy \n 2. Medium \n 3. Hard\n Choice Difficulty level:"))
+    if level==1:
+        return "easy"
 
-
+    elif level==2:
+        return "medium"
+        
+        
+    elif level==3:
+        return "hard"
+        
+    else:
+        print("Invaild Choose!!")
+        return choice_difficulty()
         
 
 #To Check Login Credential
@@ -56,14 +56,17 @@ def check(name,password):
 def subject(sub_choice):
    if sub_choice==1:
        print("Code Quiz")
-       ask_questions=load_questions("data/coding_quiz_questions.txt")     
+       level=choice_difficulty()
+       ask_questions=load_questions("data/coding_quiz_questions.txt") 
+       
    elif sub_choice==2:
        print("Gk Quiz")
+       level=choice_difficulty()
        ask_questions=load_questions("data/gk_quiz_questions.txt")
    else:
        print("Invalid Choice!")
        exit()
-   ask(ask_questions)
+   ask(ask_questions,level)
    
 
 
