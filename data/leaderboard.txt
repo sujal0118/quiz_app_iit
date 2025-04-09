@@ -1,0 +1,5 @@
+Rank      Username       Subject        level          Score     Total     Time(s)   
+============================================================
+1         sujal          Coding         easy           10        10        22        
+2         sujal          GK             easy           10        10        46        
+3         sujal          Coding         easy           0         10        473       

@@ -1,1 +1,3 @@
-1|sujal|easy|10/10|34 sec
+sujal|GK|easy|10|10|46
+sujal|Coding|easy|10|10|22
+sujal|Coding|easy|0|10|473
