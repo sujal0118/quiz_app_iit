@@ -1,9 +1,9 @@
 # version 3
 '''
-implemented the Timer feature 
+implemented the Login and register feature 
 '''
 import random
-from utils.file_oprations import load_questions
+from utils.file_oprations import load_questions,reg_users,log_users
 from utils.timer import Timer
 
 
@@ -66,9 +66,25 @@ def choice_difficulty():
 
 #To Check Login Credential
 def check(name,password):
-   return name=="sujal" and password=="12345"
+    users=log_users()
+    if name in users and users[name]==password:
+        print("Login successful!")
+        return True
+    else:
+        print("Invalid credentials. Please try again.")
+        return None
 
-
+def register():
+   username=input("Enter Username:")
+   password=input("Password:")
+   users=log_users()
+   if username in users:
+       print("Username already exists. Try another one")
+       return None
+   else:
+      reg_users(username, password)
+      print("User Registered Successfully! ")
+      return username
 
 #To Send Choice Subject Qusetions To User 
 def subject(sub_choice):
@@ -101,14 +117,12 @@ if choice==1:
       print("Subjects\n 1. Coding\n 2. GK")
       sub_choice=int(input("Enter your Choice:"))
       subject(sub_choice)
-    else:
-        print("Wrong User name and Password")
+  
+      
     
 elif choice==2 :
-    username=input("Enter Username:")
-    password=input("Password:")
-    print("User Registered Successfully! (Feature to store in file coming soon.)")
-
+      register()
+    
 else:
     print("Invalid Choice!")
     

@@ -1,3 +1,9 @@
+import json
+import os
+
+
+
+
 #To Load Questions 
 def load_questions(filename):       #geting file name from users choice
    questions=[]
@@ -17,3 +23,20 @@ def load_questions(filename):       #geting file name from users choice
                  })
               #returning  Qusetions in Dictionary
    return questions   
+
+
+# To Login and Register
+def log_users(filepath="data/users.txt"):
+    users={}
+    if os.path.exists(filepath):
+        with open(filepath,"r") as f:
+            for line in f:
+                name,password=line.strip().split("|")
+                users[name]=password
+    return users
+def reg_users(username,password,filepath="data/users.txt"):
+    with open(filepath,"a") as f:
+        f.write(f"{username}|{password}\n")
+        
+
+
