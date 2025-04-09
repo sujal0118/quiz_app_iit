@@ -1,9 +1,10 @@
 # version 3
 '''
-implemented the difficalty feature 
+implemented the Timer feature 
 '''
 import random
 from utils.file_oprations import load_questions
+from utils.timer import Timer
 
 
 # To ask random Questions
@@ -12,6 +13,16 @@ def ask(questions,level):
     diff=[q for q in questions if q['difficulty']==level]
     if not diff:
         print(f"No Questions of {level} level")
+    if level == "easy":
+        time_limit=120
+    elif level=="medium":
+        time_limit=180
+    elif level=="hard":
+        time_limit=300
+    else:
+        time_limit=120
+    timer=Timer(time_limit)
+    timer.start()
     random.shuffle(diff) #random Questions
     for i,q in enumerate(diff,start=1):
          print(f"\n Questions {i}: {q['difficulty']}: {q['question']}")
@@ -19,8 +30,15 @@ def ask(questions,level):
          print(f"B.{q['options'][1]}")
          print(f"C.{q['options'][2]}")
          print(f"D.{q['options'][3]}")
+         print(f"Time Left :{timer.time_left()} seconds")
          
+         if timer.is_time_up():
+             print("Time up")
+             break 
          ans=input("Enter Your Answer(A/B/C/D): ").strip().upper() #convert to upper case
+         if timer.is_time_up():
+            print("\n⏰ Time's up while answering! Ending the quiz.")
+            break
          if ans==q["correct"]:
              print("Correct")
              score+=1
