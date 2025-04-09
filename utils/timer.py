@@ -13,6 +13,10 @@ class Timer:
         return max(0,int(self.limit-elapsed))
     def is_time_up(self):
         return self.time_left()<=0
+    def time_elapsed(self):
+        if self.start_time is None:
+            return 0
+        return int(time.time()-self.start_time)
     
         
         

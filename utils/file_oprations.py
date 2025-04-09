@@ -38,5 +38,11 @@ def reg_users(username,password,filepath="data/users.txt"):
     with open(filepath,"a") as f:
         f.write(f"{username}|{password}\n")
         
+        
+#To Store Score 
+def score_store(username,subject,difficulty,score,total,time_taken,filepath="data/score.txt"):
+    with open(filepath,"a") as f:
+        f.write(f"{username}|{subject}|{difficulty}|{score}/{total}|{time_taken} sec\n")
+        
 
 

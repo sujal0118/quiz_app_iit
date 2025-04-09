@@ -1,14 +1,14 @@
-# version 3
+# version 6
 '''
-implemented the Login and register feature 
+implemented the storeing Score feature 
 '''
 import random
-from utils.file_oprations import load_questions,reg_users,log_users
+from utils.file_oprations import load_questions,reg_users,log_users,score_store
 from utils.timer import Timer
 
 
 # To ask random Questions
-def ask(questions,level):
+def ask(questions,level,username,subject):
     score=0
     diff=[q for q in questions if q['difficulty']==level]
     if not diff:
@@ -45,6 +45,10 @@ def ask(questions,level):
          else:
             print(f"Wrong!! Correct answer:{q['correct']}\n")
     print(f"Quiz Complete!\n Your Score: {score}/{len(diff)}")
+    time_taken=timer.time_elapsed()
+    score_store(username, subject, level, score, len(diff), time_taken)
+    print("Score Saved ..")
+    
     
 #To set difficulty level
 def choice_difficulty():
@@ -87,7 +91,7 @@ def register():
       return username
 
 #To Send Choice Subject Qusetions To User 
-def subject(sub_choice):
+def subject(sub_choice,username):
    if sub_choice==1:
        print("Code Quiz")
        level=choice_difficulty()
@@ -100,7 +104,7 @@ def subject(sub_choice):
    else:
        print("Invalid Choice!")
        exit()
-   ask(ask_questions,level)
+   ask(ask_questions,level,sub_choice,username)
    
 
 
@@ -116,7 +120,7 @@ if choice==1:
     if check(username,password):
       print("Subjects\n 1. Coding\n 2. GK")
       sub_choice=int(input("Enter your Choice:"))
-      subject(sub_choice)
+      subject(sub_choice,username)
   
       
     
