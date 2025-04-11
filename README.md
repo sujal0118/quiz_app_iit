@@ -1,4 +1,5 @@
-##Console-Based Quiz App
+##  Console-Based Quiz App
+---
 
 Welcome to Console-Based Quiz App,a feature-rich ,consloe-based quiz app written in Python.This Project Simulates a real quiz experience through terminal,offering user authentication,dynamic question selection ,timed quizzes and leaderboard
 
