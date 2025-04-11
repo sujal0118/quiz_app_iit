@@ -10,17 +10,17 @@ Welcome to Console-Based Quiz App,a feature-rich ,consloe-based quiz app written
 
 ## Features
 
-✅ **User Registration & Login**  
-✅ **Dynamic Subject & Difficulty Selection**  
-✅ **Randomized Questions with Timer Support**  
-✅ **Score Saving with Metadata (time, subject, level)**  
-✅ **Top 5 Leaderboard (sorted by score & time)**  
-✅ **File-Based Modular Architecture**  
-✅ **Extensible Design for New Subjects/Difficulties**
+- **User Registration & Login**  
+- **Dynamic Subject & Difficulty Selection**  
+- **Randomized Questions with Timer Support**  
+- **Score Saving with Metadata (time, subject, level)**  
+- **Top 5 Leaderboard (sorted by score & time)**  
+- **File-Based Modular Architecture**  
+- **Extensible Design for New Subjects/Difficulties**
 
 ---
 
-## 🗂 Project Structure
+##  Project Structure
 
 ```
 quizmaster/
@@ -59,7 +59,7 @@ python main.py
 ```
 
 ---
-##Question File Format
+## Question File Format
 
 Ensure your `questions.txt` follows this CSV-like format:
 
@@ -84,16 +84,16 @@ What is the capital of India?,Delhi,Mumbai,Chennai,Kolkata,A,easy
 5. On completion, scores are saved and shown with time taken.
 6. The **leaderboard** updates dynamically with top performers.
 
-##Leaderboard Logic
+## Leaderboard Logic
 
 The leaderboard displays the **Top 5 performers** based on:
-- 🎯 **Highest Score**
-- ⏱️ **Fastest Completion Time (if scores tie)**
+- **Highest Score**
+- **Fastest Completion Time (if scores tie)**
 
 Stored in `leaderboard.txt` for easy export and audit.
 
 
-##Challenges Faced
+## Challenges Faced
 
 - Implementing a **non-blocking timer** for each quiz level.
 - Designing a **file-driven system** without databases.
@@ -111,14 +111,14 @@ Stored in `leaderboard.txt` for easy export and audit.
 - Email notifications for quiz results
 
 ---
-##Demo Video
+## Demo Video
 
  **[Click here to watch the project demo](https://youtu.be/your-video-link)**  
-📽️ Includes:
+ Includes:
 - Full feature walkthrough
 - Code structure explanation
 - Design decisions & challenges
 ---
-## 👨‍💻 Author
+## Author
 
 **Sujal Jawalkar**
