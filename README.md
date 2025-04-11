@@ -5,8 +5,8 @@ Welcome to Console-Based Quiz App,a feature-rich ,consloe-based quiz app written
 
 > Built with simplicity ,speed and learning in mind
 
-## Preview
-
+## Preview  
+![Quiz App Screenshot](https://raw.githubusercontent.com/sujal0118/quiz_app_iit/main/quiz_app.png)
 
 ## Features
 
